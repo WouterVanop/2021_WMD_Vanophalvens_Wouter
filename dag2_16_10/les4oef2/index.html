@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login screen</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Login</legend>
+                    <label for="userName">Username:</label>
+                    <input type="text" id="userName" name="userName"><br>
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="password" placeholder="at least 8 characters"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>No account yet? Create on here:</legend>
+                    <label for="fullName">Full name:</label>
+                    <input type="text" id="fullName" name="fullName"><br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="male" value="male">
+                    <label for="male">Man</label>
+                    <input type="radio" id="female" name="female" value="female">
+                    <label for="female">Vrouw</label><br>
+
+                    <label for="favoritecolor">Your favorite color:</label>
+                    <button>&#128531;</button><br>
+                    <label for="education">Your education:</label>
+                    <select name="education" id="education">
+                        <option value="default">select ...</option>
+                    </select><br>
+                    <label for="skills">Skills:</label>
+                    <input type="checkbox" id="html" name="html" value="HTML">
+                    <label for="skills"> HTML</label>
+                    <input type="checkbox" id="java" name="java" value="javascript">
+                    <label for="skills"> javascript</label>
+                    <input type="checkbox" id="css" name="css" value="CSS">
+                    <label for="skills"> CSS</label>
+                    <input type="checkbox" id="php" name="php" value="PHP">
+                    <label for="skills"> PHP</label><br>
+                    <label for="picture">Upload a picture(.gif of .jpeg):</label>
+                    <button>Browse...</button>
+                    <label for="fileselected">No file selected.</label><br>
+                    <label for="invul">comments:</label>
+                    <textarea id="invul"></textarea><br>
+                </fieldset>
+                <input type="submit" value="Send">
+                <input type="reset" value="Cancel">
+            </form>
+        </section>
+        </table>
+    </main>
+</body>
+</html>
