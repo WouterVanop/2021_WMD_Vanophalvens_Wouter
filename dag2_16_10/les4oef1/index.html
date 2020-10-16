@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Formulier</title>
+</head>
+
+<body>
+    <header>
+        <h1>Web en mobile event</h1>
+        <p>Schrijf je nu in voor het gloednieuwe web en obile event dat <br>
+            binnekort plaats vindt.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Inschrijfformulier</h2>
+            <form>
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam"><br>
+                <label for="familienaam">Familienaam:</label>
+                <input type="text" id="familienaam" name="familienaam"><br>
+                <label for="e-mail">E-mail:</label>
+                <input type="text" id="e-mail" name="e-mail"><br>
+                <label for="geboortedatum">Geboortedatum:</label>
+                <input type="date" id="geboortedatum" name="geboortedatum"><br>
+                <label for="telefoon">Telefoon:</label>
+                <input type="text" id="telefoon" name="telefoon"><br>
+                <label for="geslacht">Geslacht:</label>
+                <input type="radio" id="male" name="gender" value="man">
+                <label for="man">Man</label>
+                <input type="radio" id="vrouw" name="gender" value="vrouw">
+                <label for="female">Vrouw</label><br>
+                <label for="ochtendsessie">Ochtendsessie:</label>
+                <select name="ochtendsessie" id="ochtendsessie">
+                    <option value="default">kies 1 sessie</option>
+                    <option value="sessieA">sessieA</option>
+                    <option value="sessieB">sessieB</option>
+                    <option value="sessieC">sessieC</option>
+                </select><br>
+                <input type="checkbox" id="smiddagseten" name="smiddagseten" value="smiddagseten">
+                <label for="smiddagseten"> Ik blijf 's middags eten</label><br>
+                <label for="namiddagsessie">Namiddagsessie:</label>
+                <select name="namiddagsessie" id="namiddagsessie">
+                    <option value="default">kies 1 sessie</option>
+                    <option value="sessieA">sessieA</option>
+                    <option value="sessieB">sessieB</option>
+                    <option value="sessieC">sessieC</option>
+                </select><br>
+                <label for="invul">Dit wens ik nog mee te geven:</label><br>
+                <textarea id="invul"></textarea><br>
+                <input type="reset" value="Alles leegmaken">
+                <input type="submit" value="Verzenden">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
