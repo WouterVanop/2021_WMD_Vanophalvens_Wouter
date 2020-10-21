@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.boxYellow {
+    flex: 1;
+    order: 2;
+}
+.boxRed {
+    flex: 1;
+    order: 4;
+}
+.boxOrange {
+    flex: 1;
+    order: 3;
+}
+.boxBlue {
+    flex: 1;
+    order: 3;
+}
+.boxGreen {
+    flex: 1 0 80%;
+    order: -1;
+}
