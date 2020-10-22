@@ -1,0 +1,71 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+        "Green Green Green"
+        "Yellow Red Blue"
+        "Orange Orange Blue";
+}
+
+.boxGreen {
+    grid-area: Green;
+}
+
+.boxYellow {
+    grid-area: Yellow;
+}
+
+.boxRed {
+    grid-area: Red;
+}
+
+.boxBlue {
+    grid-area: Blue;
+}
+
+.boxOrange {
+    grid-area: Orange;
+}
+.listYellow {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "li1 li2 "
+        "li3 li4";
+}
+.li1 {
+    grid-area: li1;
+}
+.li2 {
+    grid-area: li2;
+}
+.li3 {
+    grid-area: li3;
+}
+.li4 {
+    grid-area: li4;
+}
+.listRed {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "liA liB "
+        "liC liD";
+}
+.liA {
+    grid-area: liA;
+}
+.liB {
+    grid-area: liB;
+}
+.liC {
+    grid-area: liC;
+}
+.liD {
+    grid-area: liD;
+}
