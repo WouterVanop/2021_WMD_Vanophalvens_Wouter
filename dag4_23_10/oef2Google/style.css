@@ -1,0 +1,126 @@
+/* algemene zaken */
+* {
+    box-sizing: border-box;
+    margin: 0.2rem;
+}
+
+body {
+    max-height: 100vh;
+}
+
+.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* specifieke zaken */
+.nav {
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+header a {
+    color: black;
+}
+
+header a:hover {
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.searchbar {
+    padding: 12px 160px 12px 160px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    margin-bottom: 20px;
+}
+
+.searchbar:hover {
+    box-shadow: 2px 2px 2px 2px rgb(231, 229, 229);
+    -ms-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+main .flex-horizontal {
+    justify-content: center;
+    height: 60px;
+}
+.buttonZoeken,
+.buttonGok {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: gray;
+    
+}
+
+.buttonZoeken:hover,
+.buttonGok:hover {
+    color: black;
+    border: 0.5px solid darkgray;
+
+}
+
+.searchbar::placeholder {
+    text-align: center;
+}
+
+main div p {
+    font-size: 14px;
+}
+
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgba(187, 184, 184, 0.61);
+    border: 1px solid darkgray;
+    margin: 0;
+    margin-bottom: 36px;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer1 p {
+    margin-left: 15px;
+    color: gray;
+}
+
+.footer2 {
+    background-color: rgba(187, 184, 184, 0.61);
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-inline-start: 0;
+}
+
+.footer2 a {
+    color: gray;
+}
