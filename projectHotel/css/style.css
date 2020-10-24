@@ -1,0 +1,37 @@
+/* Kleurenschema */
+
+/* #0F1626 navy blue */
+/* #AB987A leather */
+/* #FF533D coral */
+/* #F5F5F5 eggshell */
+
+/* standaard zaken */
+
+* {
+    box-sizing: border-box;
+    margin: 0.2rem;
+}
+
+body {
+    max-height: 100vh;
+}
+
+.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* css index */

@@ -94,33 +94,33 @@ main {
 
 .footer {
     background-color: rgba(187, 184, 184, 0.61);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.footer1 {
     border: 1px solid darkgray;
     margin: 0;
-    margin-bottom: 36px;
-    padding: 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
 
-.footer1 p {
-    margin-left: 15px;
+.footer p {
+    margin: 15px;
     color: gray;
 }
-
-.footer2 {
-    background-color: rgba(187, 184, 184, 0.61);
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding-inline-start: 0;
-}
-
-.footer2 a {
+.footer a {
     color: gray;
+}
+.footerleft {
+    justify-content: flex-start;
+    padding: 0;
+    margin-left: 0;
+}
+.footerright {
+    margin-right: 0;
+    padding: 0;
+    justify-content: flex-end;
+    float: right;
 }
