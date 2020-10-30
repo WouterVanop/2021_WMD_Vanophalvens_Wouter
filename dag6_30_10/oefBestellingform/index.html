@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+
+<head>
+    <title>BestellingsFormulier</title>
+</head>
+
+<body>
+    <h2>Bestellings formulier</h2>
+    <form id="orderForm">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name">
+        <label id="nameError"></label><br>
+        
+        <label for="firstName">Firstname: </label>
+        <input type="text" name="firstName" id="firstName">
+        <label id="firstNameError"></label><br>
+        
+        <label for="date">Date: </label>
+        <input type="date" name="date" id="date" min="2020-10-30" max="2020-11-06">
+        <label id="dateError"></label><br>
+        
+        <label for="order">Order: </label>
+        <textarea name="order" id="order" cols="30" rows="5"></textarea><br>
+        
+        <label for="address">Email-address: </label>
+        <input type="text" name="address" id="address">
+        <label id="addressError"></label><br>
+
+        <input type="submit" value="Order" name="orderButton" id="orderButton"></button>
+    </form>
+    <div id="input">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
