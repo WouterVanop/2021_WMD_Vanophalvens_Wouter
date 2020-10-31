@@ -1,4 +1,5 @@
 (function () {
+    'use strict';
     const forms = document.forms;
     const orderForm = forms.orderForm;
 
@@ -16,12 +17,14 @@
     function showInput(e) {
         console.log(e);
         e.preventDefault();
-        validateEmailForm();
-        validateDateForm();
-        validateNameForm();
-        validateFisrtNamesForm();
+        let validated = 
+        (validateEmailForm() && 
+        validateDateForm() && 
+        validateNameForm() &&
+        validateFisrtNamesForm());
 
-        const ulElement = document.createElement("ul");
+        if(validated == true){
+            const ulElement = document.createElement("ul");
         const liName = document.createElement("li");
         const liFirstName = document.createElement("li");
         const liDate = document.createElement("li");
@@ -40,21 +43,27 @@
         ulElement.append(liOrder);
         ulElement.append(liAddress);
         document.getElementById('input').append(ulElement);
+        }
+        
 
     }
     function validateNameForm(){
         if(nameElement.value.length <= 2){
             orderForm.querySelector("#nameError").innerText = "Choose a valid name.";
+            return false;
         } else {
             orderForm.querySelector("#nameError").innerText = "";
+            return true;
         }
     }
 
     function validateFisrtNamesForm(){
         if(firstNameElement.value.length <= 2){
             orderForm.querySelector("#firstNameError").innerText = "Choose a valid firstname.";
+            return false;
         } else {
             orderForm.querySelector("#firstNameError").innerText = "";
+            return true;
         }
     }
 
@@ -64,8 +73,10 @@
         if (selectedDate.getDate() == disableDate.getDate() &&
             selectedDate.getMonth() == disableDate.getMonth()) {
             orderForm.querySelector("#dateError").innerText = "Choose a valid date.";
+            return false;
         } else {
             orderForm.querySelector("#dateError").innerText = "";
+            return true;
         }
     }
 
@@ -73,8 +84,10 @@
         var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         if (addressElement.value.match(mailformat)) {
             orderForm.querySelector("#addressError").innerText = "";
+            return true;
         } else {
             orderForm.querySelector("#addressError").innerText = "Choose a valid Email-address.";
+            return false;
         }
     }
 })();
