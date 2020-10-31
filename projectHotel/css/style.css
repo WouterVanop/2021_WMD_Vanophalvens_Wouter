@@ -216,7 +216,7 @@ main div ul {
       width: 400px;
   }
   .form #orderButton {
-      width: 50px;
+      width: 200px;
   }
   
   .container3 {
@@ -228,7 +228,7 @@ main div ul {
     justify-content: center;
     grid-template-areas:
         "adres telefoon email"
-        "kaart kaart form";
+        "kaart form form";
 }
 .adres {
     grid-area: adres;
