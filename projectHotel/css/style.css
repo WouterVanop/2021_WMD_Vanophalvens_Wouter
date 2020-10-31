@@ -92,11 +92,16 @@ header .flex-horizontal {
 .menu a:hover {
     color:  #0F1626;
     text-decoration: underline;
+    
+}
+li .selectedPage {
+   color: #0F1626; 
+   text-decoration: underline;
 }
 
 
-
 /* main --------------------------------------------*/
+
 .container {
     display: grid;
     grid-template-columns: auto auto;
@@ -200,6 +205,66 @@ main div ul {
   main {
       margin-bottom: 100px;
   }
+  main .form {
+      text-align: center;
+      display: block;
+  }
+  input {
+      width: 400px;
+  }
+  textarea {
+      width: 400px;
+  }
+  .form #orderButton {
+      width: 50px;
+  }
+  
+  .container3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    grid-template-areas:
+        "adres telefoon email"
+        "kaart kaart form";
+}
+.adres {
+    grid-area: adres;
+    text-align: center;
+}
+.telefoon {
+    grid-area: telefoon;
+    text-align: center;
+}
+.email {
+    grid-area: email;
+    text-align: center;
+}
+.kaart {
+    grid-area: kaart;
+}
+.form {
+    grid-area: form;
+}
+.container3 p {
+    color: #0F1626;
+    font-style: italic;
+}
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 380px;
+    width: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 380px;
+    width: 400px;
+}
 /* footer ------------------------------------------*/
 .low-bar {
     margin: 0;
