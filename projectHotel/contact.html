@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl-be">
 
 <head>
     <meta charset="utf-8">
@@ -11,12 +11,12 @@
 <body>
     <div class="flex-horizontal top-bar">
         <div class="info flex-horizontal">
-            <p>+32499361859</p>
+            <p>+32499638159</p>
             <p>info@hotelharmonie.be</p>
         </div>
         <div class="flex-horizontal reservation">
-            <a href="boeken.html">RESERVATIE</a>
-            <p>TALEN</p>
+            <a href="boeken.html">RESERVEER NU</a>
+            <img src="images/belgium-flag-wave-icon-16.png" width="20px" alt="voorlopige vervanging logo">
         </div>
 
     </div>
@@ -31,7 +31,7 @@
                     <li><a href="kamers.html">KAMERS</a></li>
                     <li><a href="restaurant.html">RESTAURANT</a></li>
                     <li><a href="weer.html">WEER</a></li>
-                    <li><a href="spawelness.html">SPA & WELNESS</a></li>
+                    <li><a href="spawelness.html">SPA & WELLNESS</a></li>
                     <li><a href="boeken.html">BOEKEN</a></li>
                     <li><a class="selectedPage" href="contact.html">CONTACT</a></li>
                 </ul>
@@ -42,12 +42,11 @@
     <main>
         <div class="container3">
             <div class="adres">
-                <h3>Adres</h3>
-                <p>Weldadigheidsstraat 38, Leuven 3000</p>
+                <h3>Adres</h3>Stationsstraat 1, Destelbergen 9070</p>
             </div>
             <div class="telefoon">
                 <h3>Telefoon nummer</h3>
-                <p>+32499361859</p>
+                <p>+32499638159</p>
             </div>
             <div class="email">
                 <h3>Email-adres</h3>
@@ -57,7 +56,7 @@
                 <div class="mapouter">
                     <div class="gmap_canvas">
                         <iframe width="400" height="400" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=weldadigheidsstraat%2038&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        src="https://maps.google.com/maps?q=stationsstraat%201%20Gent%209000&t=&z=13&ie=UTF8&iwloc=&output=embed"
                             frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                         </iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/">
                         </a>
@@ -65,33 +64,33 @@
                 </div>
             </div>
             <div class="form">
-                <form id="orderForm">
-                    <label for="name">Name: </label><br>
+                <form id="contactForm">
+                    <label for="name">Naam: </label><br>
                     <input type="text" name="name" id="name">
                     <label id="nameError"></label><br>
 
-                    <label for="firstName">Firstname: </label><br>
+                    <label for="firstName">Voornaam: </label><br>
                     <input type="text" name="firstName" id="firstName">
                     <label id="firstNameError"></label><br>
 
-                    <label for="address">Email-address: </label><br>
+                    <label for="address">Email-adres: </label><br>
                     <input type="text" name="address" id="address">
                     <label id="addressError"></label><br>
 
-                    <label for="onderwerp">Onderwerp: </label><br>
-                    <input type="text" name="onderwerp" id="onderwerp">
-                    <label id="onderwerpError"></label><br>
+                    <label for="subject">Onderwerp: </label><br>
+                    <input type="text" name="subject" id="subject">
+                    <label id="subjectError"></label><br>
 
-                    <label for="order">Question/Comment: </label><br>
-                    <textarea name="order" id="order" cols="30" rows="5"></textarea><br>
+                    <label for="remark">Vraag/Opmerking: </label><br>
+                    <textarea name="remark" id="remark" cols="30" rows="5"></textarea><br>
 
 
 
-                    <input type="submit" value="Send" name="orderButton" id="orderButton"></button>
+                    <input type="submit" value="Verzenden" name="sendButton" id="sendButton"></button>
                 </form>
             </div>
         </div>
-
+        <script src="script/script.js"></script>
     </main>
     <footer>
         <div class="low-bar">

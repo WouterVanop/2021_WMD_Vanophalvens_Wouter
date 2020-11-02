@@ -37,7 +37,7 @@ a {
 
 
 /* css index --------------------------------------*/
-/* top nbar ---------------------------------------*/
+/* top bar ---------------------------------------*/
 .top-bar {
     margin: 0;
     padding: 0;
@@ -50,22 +50,28 @@ a {
     box-sizing: content-box;
     justify-content: space-between;
 }
+
 .reservation a {
     color: #F5F5F5;
 }
+
 .reservation a:hover {
-    color:#FF533D;
+    color: #FF533D;
 }
+
 .info {
     justify-content: flex-start;
 }
+
 .reservation {
     justify-content: flex-end;
 }
+
 /* header -----------------------------------------*/
 header {
     margin-top: 50px;
 }
+
 nav {
     color: #F5F5F5;
     text-align: center;
@@ -74,29 +80,35 @@ nav {
     width: 100%;
     margin: 0;
 }
+
 header nav .logo img {
     height: 200px;
     width: auto;
 }
+
 header .flex-horizontal {
     text-align: center;
     justify-content: center;
 }
+
 .menu {
     background-color: #AB987A;
 }
+
 .menu a {
     color: #F5F5F5;
-    
+
 }
+
 .menu a:hover {
-    color:  #0F1626;
+    color: #0F1626;
     text-decoration: underline;
-    
+
 }
+
 li .selectedPage {
-   color: #0F1626; 
-   text-decoration: underline;
+    color: #0F1626;
+    text-decoration: underline;
 }
 
 
@@ -115,34 +127,43 @@ li .selectedPage {
         "text3 image3"
         "image4 text4";
 }
+
 .text1 {
     grid-area: text1;
     font-size: large;
 }
+
 .image1 {
     grid-area: image1;
 }
+
 .text2 {
     grid-area: text2;
     font-size: large;
 }
+
 .image2 {
     grid-area: image2;
 }
+
 .text3 {
     grid-area: text3;
     font-size: large;
 }
+
 .image3 {
     grid-area: image3;
 }
+
 .text4 {
     grid-area: text4;
     font-size: large;
 }
+
 .image4 {
     grid-area: image4;
 }
+
 .container2 {
     display: grid;
     grid-template-columns: auto auto;
@@ -154,41 +175,49 @@ li .selectedPage {
         "text1 image1 "
         "image2 image3";
 }
+
 .text1 {
     grid-area: text1;
     font-size: large;
 }
+
 .image2 {
     grid-area: image2;
 }
+
 .image3 {
     grid-area: image3;
 }
+
 main div img {
-    width: auto;
-    height: 300px;
+    width: 450px;
+    height: auto;
 }
+
 main div ul {
     list-style: circle;
 }
+
 .containerHoverEffect {
     position: relative;
     width: auto;
     height: 300px;
-  }
-  .overlay2 {
-    position: absolute; 
-    bottom: 0%; 
-    background:#0F1626;
-    color:#F5F5F5; 
+}
+
+.overlay2 {
+    position: absolute;
+    bottom: 0%;
+    background: #0F1626;
+    color: #F5F5F5;
     width: 450px;
     transition: .5s ease;
-    opacity:0;
+    opacity: 0;
     font-size: 12px;
     padding: 10px;
     text-align: center;
-  }
-  .text {
+}
+
+.text {
     color: #F5F5F5;
     font-size: 40px;
     position: absolute;
@@ -198,28 +227,35 @@ main div ul {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  .containerHoverEffect:hover .overlay2 {
+}
+
+
+.containerHoverEffect:hover .overlay2 {
     opacity: 0.9;
-  }
-  main {
-      margin-bottom: 100px;
-  }
-  main .form {
-      text-align: center;
-      display: block;
-  }
-  input {
-      width: 400px;
-  }
-  textarea {
-      width: 400px;
-  }
-  .form #orderButton {
-      width: 200px;
-  }
-  
-  .container3 {
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+main .form {
+    text-align: center;
+    display: block;
+}
+
+input {
+    width: 400px;
+}
+
+textarea {
+    width: 400px;
+}
+
+.form #sendButton {
+    width: 150px;
+}
+
+.container3 {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
@@ -230,28 +266,35 @@ main div ul {
         "adres telefoon email"
         "kaart form form";
 }
+
 .adres {
     grid-area: adres;
     text-align: center;
 }
+
 .telefoon {
     grid-area: telefoon;
     text-align: center;
 }
+
 .email {
     grid-area: email;
     text-align: center;
 }
+
 .kaart {
     grid-area: kaart;
 }
+
 .form {
     grid-area: form;
 }
+
 .container3 p {
     color: #0F1626;
     font-style: italic;
 }
+
 .mapouter {
     position: relative;
     text-align: right;
@@ -265,6 +308,12 @@ main div ul {
     height: 380px;
     width: 400px;
 }
+
+::placeholder {
+    color: #FF533D;
+    text-align: center;
+}
+
 /* footer ------------------------------------------*/
 .low-bar {
     margin: 0;
@@ -276,6 +325,229 @@ main div ul {
     background-color: #0F1626;
     color: #F5F5F5;
 }
+
 footer {
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive design ------------------------------------------*/
+
+
+@media (max-width: 1000px) {
+
+    /* standaard zaken ---------------------------------------*/
+    * {
+        box-sizing: border-box;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .flex-horizontal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* top bar ---------------------------------------*/
+    .top-bar {
+        opacity: 0;
+    }
+
+    /* header -----------------------------------------*/
+    header {
+        margin-top: 10px;
+    }
+    header nav div ul{
+        padding-left: 0;
+    }
+    /* main -------------------------------------------*/
+    .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: center;
+        grid-template-areas:
+            "image1"
+            "text1"
+            "image2"
+            "text2"
+            "image3"
+            "text3"
+            "image4"
+            "text4";
+    }
+
+    .container2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 5px;
+        row-gap: 5px;
+        justify-content: center;
+        grid-template-areas:
+            "image1"
+            "text1"
+            "image2"
+            "image3";
+    }
+    .container3 {
+        display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    grid-template-areas:
+        "adres"
+        "kaart"
+        "telefoon"
+        "email"
+        "form";
+    }
+    /* footer -----------------------------------------*/
+}
+
+
+@media (max-width: 600px) {
+    /* standaard zaken ---------------------------------------*/
+    * {
+        box-sizing: border-box;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: small;
+    }
+    .flex-horizontal {
+        display: flex;
+        flex-direction: column;
+    }
+    /* top bar ----------------------------------------*/
+    /* header -----------------------------------------*/
+    header ul {
+        margin-left: 0;
+    }
+    /* main -------------------------------------------*/
+    main {
+        margin-bottom: 25px;
+    }
+    main div img {
+        width: 350px;
+        height: auto;
+        margin-left: 18px;
+    }
+    main p, h4 {
+        text-align: center;
+    }
+    main div {
+        justify-content: center;
+    }
+    main li {
+        list-style: circle;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .containerHoverEffect {
+        position: relative;
+        width: auto;
+        height: 300px;
+    }
+    
+    .overlay2 {
+        position: absolute;
+        bottom: 19%;
+        left: 3.4%;
+        background: #0F1626;
+        color: #F5F5F5;
+        width: 350px;
+        transition: .5s ease;
+        opacity: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .text {
+        color: #F5F5F5;
+        font-size: 40px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    main div form input, textarea {
+        width: 250px;
+    }
+    .form #sendButton {
+        width: 150px;
+    }
+    .mapouter {
+        position: relative;
+        text-align: right;
+        height: 280px;
+        width: 300px;
+    }
+    
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 280px;
+        width: 300px;
+    }
+    /* footer -----------------------------------------*/
+    
+    
+}
+@media (max-width: 370px) {
+    /* standaard zaken --------------------------------*/
+    /* top bar ----------------------------------------*/
+    /* header -----------------------------------------*/
+    header ul {
+        margin-left: 0;
+    }
+    header img {
+        width: 350px;
+        height: auto;
+    }
+    /* main -------------------------------------------*/
+    
+    main div img {
+        width: 250px;
+        height: auto;
+        margin-left: 18px;
+    }
+    .text {
+        color: #F5F5F5;
+        font-size: 40px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 20px;
+    }
+    .overlay2 {
+        position: absolute;
+        bottom: 45%;
+        left: 4.8%;
+        background: #0F1626;
+        color: #F5F5F5;
+        width: 250px;
+        transition: .5s ease;
+        opacity: 0;
+        font-size: 9px;
+        text-align: center;
+    }
+    /* footer -----------------------------------------*/
+    
+    
 }
