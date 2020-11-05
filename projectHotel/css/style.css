@@ -79,6 +79,7 @@ nav {
     justify-content: center;
     width: 100%;
     margin: 0;
+    font-size: 18px;
 }
 
 header nav .logo img {
@@ -111,6 +112,9 @@ li .selectedPage {
     text-decoration: underline;
 }
 
+.reservation img {
+    width: 2Opx;
+}
 
 /* main --------------------------------------------*/
 
@@ -239,7 +243,7 @@ main {
 }
 
 main .form {
-    text-align: center;
+    
     display: block;
 }
 
@@ -265,6 +269,28 @@ textarea {
     grid-template-areas:
         "adres telefoon email"
         "kaart form form";
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+     justify-content: center;
+    grid-template-areas:
+        "text1 text1 text2 text2"
+        "text3 text4 text5 text6"
+    ;
+}
+
+.container4 div input {
+    width: 50px;
+}
+
+.container4 div #departureDate,
+#arrivalDate {
+    width: 300px;
 }
 
 .adres {
@@ -305,13 +331,229 @@ textarea {
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
-    height: 380px;
+    height: 400px;
     width: 400px;
 }
 
-::placeholder {
+.container3 ::placeholder {
     color: #FF533D;
     text-align: center;
+}
+
+.container5 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+    grid-template-areas:
+        "dag1 dag2 dag3 dag4 dag5"
+    ;
+}
+
+.dag1 {
+    grid-area: dag1;
+}
+
+.dag2 {
+    grid-area: dag2;
+}
+
+.dag3 {
+    grid-area: dag3;
+}
+
+.dag4 {
+    grid-area: dag4;
+}
+
+.dag5 {
+    grid-area: dag5;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #0f162477, #0F1626);
+}
+
+.search-box {
+    width: 100px;
+}
+
+.inputfield {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+.location .city {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.location .date1,
+.date2,
+.date3,
+.date4,
+.date5 {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.current .temp1,
+.temp2,
+.temp3,
+.temp4,
+.temp5 {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.temp1 {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.current span {
+    font-weight: 500;
+}
+
+.current .weather1,
+.weather2,
+.weather3,
+.weather4,
+.weather5 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.weather1 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.current .hi-low1,
+.hi-low2,
+.hi-low3,
+.hi-low4,
+.hi-low5 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hi-low1 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.container6 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    grid-template-areas:
+        "room1 form1 "
+        "room2 form1"
+        "room3 form1"
+        "room4 betaalForm";
+}
+.room1 {
+    grid-area: room1;
+}
+.room2 {
+    grid-area: room2;
+}
+.room3 {
+    grid-area: room3;
+}
+.room4 {
+    grid-area: room4;
+}
+.form1 {
+    grid-area: form1;
+}
+
+.betaalForm {
+    grid-area: betaalForm;
+    border: solid #0F1626;
+    border-radius: 8px;
+}
+.betaalForm p {
+    margin-bottom: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+.betaalForm h3 {
+    margin-top: 62px;
+    margin-right: 15px;
+    text-align: center;
+    text-decoration: underline;
+}
+select {
+    width: 400px;
+}
+.kinderVolwassen div select {
+    width: 180px;
+}
+.kinderVolwassen {
+    justify-content: center;
+}
+.container6 h3 {
+    padding-bottom: 10px;
+}
+.btn {
+    background-color:  #0F1626;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    float: right;
+    outline: none;
+    width: 150px;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
 }
 
 /* footer ------------------------------------------*/
@@ -334,13 +576,23 @@ footer {
 
 
 
-
-
-
-
-
 /* responsive design ------------------------------------------*/
+@media (max-width: 1350px) {
+    .container5 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        grid-template-areas:
+            "dag1 dag2"
+            "dag3 dag4"
+            "dag5 dag5";
+    }
 
+    .dag5 {
+        text-align: center;
+    }
+}
 
 @media (max-width: 1000px) {
 
@@ -349,6 +601,7 @@ footer {
         box-sizing: border-box;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+
     .flex-horizontal {
         display: flex;
         flex-direction: column;
@@ -363,9 +616,11 @@ footer {
     header {
         margin-top: 10px;
     }
-    header nav div ul{
+
+    header nav div ul {
         padding-left: 0;
     }
+
     /* main -------------------------------------------*/
     .container {
         display: grid;
@@ -398,66 +653,110 @@ footer {
             "image2"
             "image3";
     }
+
     .container3 {
         display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-    grid-template-areas:
-        "adres"
-        "kaart"
-        "telefoon"
-        "email"
-        "form";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: center;
+        grid-template-areas:
+            "adres"
+            "kaart"
+            "telefoon"
+            "email"
+            "form";
+    }
+    .container6 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: center;
+        grid-template-areas:
+            "form1"
+            "betaalForm"
+            "room1"
+            "room2"
+            "room3"
+            "room4";
+    }
+    .form1{
+        text-align: center;
+    }
+    select {
+        width: 250px;
+    }
+    .kinderVolwassen {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main .form {
+        text-align: center;
+    }
+    .btn {
+        float: none;
+        padding: 4px 8px;
     }
     /* footer -----------------------------------------*/
 }
 
 
 @media (max-width: 600px) {
+
     /* standaard zaken ---------------------------------------*/
     * {
         box-sizing: border-box;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: small;
     }
+
     .flex-horizontal {
         display: flex;
         flex-direction: column;
     }
+
     /* top bar ----------------------------------------*/
     /* header -----------------------------------------*/
     header ul {
         margin-left: 0;
     }
+
     /* main -------------------------------------------*/
     main {
         margin-bottom: 25px;
     }
+
     main div img {
         width: 350px;
         height: auto;
         margin-left: 18px;
     }
-    main p, h4 {
+
+    main p,
+    h4 {
         text-align: center;
     }
+
     main div {
         justify-content: center;
     }
+
     main li {
         list-style: circle;
         margin-left: 60px;
         margin-right: 60px;
     }
+
     .containerHoverEffect {
         position: relative;
         width: auto;
         height: 300px;
     }
-    
+
     .overlay2 {
         position: absolute;
         bottom: 19%;
@@ -470,7 +769,7 @@ footer {
         font-size: 12px;
         text-align: center;
     }
-    
+
     .text {
         color: #F5F5F5;
         font-size: 40px;
@@ -482,47 +781,66 @@ footer {
         transform: translate(-50%, -50%);
         text-align: center;
     }
-    main div form input, textarea {
+
+    main div form input,
+    textarea {
         width: 250px;
     }
+
     .form #sendButton {
         width: 150px;
     }
+
     .mapouter {
         position: relative;
         text-align: right;
         height: 280px;
         width: 300px;
     }
-    
+
     .gmap_canvas {
         overflow: hidden;
         background: none !important;
         height: 280px;
         width: 300px;
     }
+
+    .container5 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app-wrap {
+        text-align: center;
+    }
+
     /* footer -----------------------------------------*/
-    
-    
+
+
 }
+
 @media (max-width: 370px) {
+
     /* standaard zaken --------------------------------*/
     /* top bar ----------------------------------------*/
     /* header -----------------------------------------*/
     header ul {
         margin-left: 0;
     }
+
     header img {
         width: 350px;
         height: auto;
     }
+
     /* main -------------------------------------------*/
-    
+
     main div img {
         width: 250px;
         height: auto;
         margin-left: 18px;
     }
+
     .text {
         color: #F5F5F5;
         font-size: 40px;
@@ -535,6 +853,7 @@ footer {
         text-align: center;
         font-size: 20px;
     }
+
     .overlay2 {
         position: absolute;
         bottom: 45%;
@@ -547,7 +866,8 @@ footer {
         font-size: 9px;
         text-align: center;
     }
+
     /* footer -----------------------------------------*/
-    
-    
+
+
 }
