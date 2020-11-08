@@ -15,6 +15,8 @@
     const sendButton = boekenForm.sendButton;
     const aankomstDatumElement = boekenForm.aankomstDatum;
     const vertrekDatumElement = boekenForm.vertrekDatum;
+    const vertrekUurElement = boekenForm.vertrekUur;
+    const aankomstUurElement = boekenForm.aankomstUur;
 
     vertrekDatumElement.addEventListener('click', ValidatieDatum);
 
@@ -27,14 +29,15 @@
 
     sendButton.addEventListener('click', showInput);
 
-    
 
-    function ValidatieDatum() 
-    {
-     console.log(aankomstDatumElement.value);
-     let date = new date();
-     date = aankomstDatumElement.value;
-        document.getElementById("vertrekDatumElement").setAttribute("min", date);
+    function ValidatieDatum() {
+        console.log(aankomstDatumElement.value);
+        console.log(vertrekUurElement.value);
+        console.log(aankomstUurElement.value);
+        var datum = new Date();
+        datum = aankomstDatumElement.value;
+        //datum.addDays(1); werkt niet 
+        document.getElementById("vertrekDatum").setAttribute("min", datum);
     }
 
 
@@ -60,7 +63,9 @@
             validateTelephoneNumberForm() &&
             validateAddressForm() &&
             validateRoomsForm() &&
-            validatePersonsForm())
+            validatePersonsForm() &&
+            validateDepartureDate() &&
+            validateVertrekUurForm())
         if (validated == false) {
             e.preventDefault();
             validateEmailForm();
@@ -69,6 +74,8 @@
             validateAddressForm();
             validateRoomsForm();
             validatePersonsForm();
+            validateDepartureDateForm();
+            validateVertrekUurForm();
         }
 
     }
@@ -137,6 +144,27 @@
             return false;
         } else {
             boekenForm.querySelector("#errorAantalVol").innerText = "";
+            return true;
+        }
+    }
+
+    function validateDepartureDateForm() {
+        console.log(aankomstDatumElement);
+        console.log(vertrekDatumElement);
+        if (aankomstDatumElement.value == vertrekDatumElement.value) {
+            boekenForm.querySelector("#errorVertrekDatum").innerText = "Je moet minstens 1 dag boeken"
+            return false;
+        } else {
+            boekenForm.querySelector("#errorVertrekDatum").innerText = "";
+            return true;
+        }
+    }
+    function validateVertrekUurForm() {
+        if(vertrekUurElement < '18:00:00'){
+            boekenForm.querySelector("#errorVertrekUur").innerText = "Kies een juist tijdstip";
+            return false;
+        } else {
+            boekenForm.querySelector("#errorVertrekUur").innerText = "";
             return true;
         }
     }
