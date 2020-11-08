@@ -1,9 +1,10 @@
 /* Kleurenschema */
-
-/* #0F1626 navy blue */
-/* #AB987A leather */
-/* #FF533D coral */
-/* #F5F5F5 eggshell */
+:root {
+    --NavyBlue: #0F1626;
+    --Leather: #AB987A;
+    --Coral: #FF533D;
+    --Eggshell: #F5F5F5;
+  }
 
 /* standaard zaken */
 
@@ -12,9 +13,13 @@
     margin: 0.4rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+*::selection {
+    background-color: var(--Leather);
+    color: white;
+  }
 
 body {
-    background-color: #F5F5F5;
+    background-color: var(--Eggshell);
 }
 
 .flex-horizontal {
@@ -45,18 +50,18 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #0F1626;
-    color: #F5F5F5;
+    background-color:var(--NavyBlue);
+    color: var(--Eggshell);
     box-sizing: content-box;
     justify-content: space-between;
 }
 
 .reservation a {
-    color: #F5F5F5;
+    color: var(--Eggshell);
 }
 
 .reservation a:hover {
-    color: #FF533D;
+    color: var(--Coral);
 }
 
 .info {
@@ -73,7 +78,7 @@ header {
 }
 
 nav {
-    color: #F5F5F5;
+    color: var(--Eggshell);
     text-align: center;
     align-content: center;
     justify-content: center;
@@ -81,7 +86,6 @@ nav {
     margin: 0;
     font-size: 18px;
 }
-
 header nav .logo img {
     height: 200px;
     width: auto;
@@ -93,22 +97,22 @@ header .flex-horizontal {
 }
 
 .menu {
-    background-color: #AB987A;
+    background-color: var(--Leather);
 }
 
 .menu a {
-    color: #F5F5F5;
+    color: var(--Eggshell);
 
 }
 
 .menu a:hover {
-    color: #0F1626;
+    color: var(--NavyBlue);
     text-decoration: underline;
 
 }
 
 li .selectedPage {
-    color: #0F1626;
+    color: var(--NavyBlue);
     text-decoration: underline;
 }
 
@@ -211,8 +215,8 @@ main div ul {
 .overlay2 {
     position: absolute;
     bottom: 0%;
-    background: #0F1626;
-    color: #F5F5F5;
+    background: var(--NavyBlue);
+    color: var(--Eggshell);
     width: 450px;
     transition: .5s ease;
     opacity: 0;
@@ -222,7 +226,7 @@ main div ul {
 }
 
 .text {
-    color: #F5F5F5;
+    color: var(--Eggshell);
     font-size: 40px;
     position: absolute;
     top: 50%;
@@ -257,6 +261,11 @@ textarea {
 
 .form #sendButton {
     width: 150px;
+}
+.foutMelding {
+    color: red;
+    font-size: 14px;
+    font-style: italic;
 }
 
 .container3 {
@@ -317,7 +326,7 @@ textarea {
 }
 
 .container3 p {
-    color: #0F1626;
+    color: var(--NavyBlue);
     font-style: italic;
 }
 
@@ -335,10 +344,6 @@ textarea {
     width: 400px;
 }
 
-.container3 ::placeholder {
-    color: #FF533D;
-    text-align: center;
-}
 
 .container5 {
     display: grid;
@@ -498,7 +503,7 @@ textarea {
 
 .betaalForm {
     grid-area: betaalForm;
-    border: solid #0F1626;
+    border: solid var(--NavyBlue);
     border-radius: 8px;
 }
 .betaalForm p {
@@ -525,7 +530,7 @@ select {
     padding-bottom: 10px;
 }
 .btn {
-    background-color:  #0F1626;
+    background-color:  var(--NavyBlue);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -556,6 +561,19 @@ select {
     box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
 }
 
+.priceContainer {
+    position: relative;
+  }
+  
+  .bottomright {
+    position: absolute;
+    bottom: 10%;
+    right: 4%;
+    font-size: 18px;
+    color: var(--Eggshell);
+    font-weight: bold;
+  }
+
 /* footer ------------------------------------------*/
 .low-bar {
     margin: 0;
@@ -564,8 +582,9 @@ select {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #0F1626;
-    color: #F5F5F5;
+    background-color: var(--NavyBlue);
+    color: var(--Eggshell);
+    
 }
 
 footer {
@@ -687,7 +706,7 @@ footer {
         text-align: center;
     }
     select {
-        width: 250px;
+        width: 400px;
     }
     .kinderVolwassen {
         display: flex;
@@ -740,7 +759,16 @@ footer {
     h4 {
         text-align: center;
     }
-
+    main p,
+    h3 {
+        text-align: center;
+    }
+    .betaalForm {
+        margin-left: 15px;
+    }
+    .betaalForm h3 {
+        margin-top: 20px;
+    }
     main div {
         justify-content: center;
     }
@@ -814,6 +842,9 @@ footer {
         text-align: center;
     }
 
+    select {
+        width: 250px;
+    }
     /* footer -----------------------------------------*/
 
 
@@ -853,7 +884,9 @@ footer {
         text-align: center;
         font-size: 20px;
     }
-
+    .bottomright {
+        font-size: 12px;
+    }
     .overlay2 {
         position: absolute;
         bottom: 45%;

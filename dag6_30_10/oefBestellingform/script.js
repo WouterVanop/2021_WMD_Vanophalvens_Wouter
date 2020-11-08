@@ -17,38 +17,39 @@
     function showInput(e) {
         console.log(e);
         e.preventDefault();
-        let validated = 
-        (validateEmailForm() && 
-        validateDateForm() && 
-        validateNameForm() &&
-        validateFisrtNamesForm());
+        let validated =
+            (validateEmailForm() &&
+                validateDateForm() &&
+                validateNameForm() &&
+                validateFirstNamesForm());
 
-        if(validated == true){
+        if (validated == true) {
             const ulElement = document.createElement("ul");
-        const liName = document.createElement("li");
-        const liFirstName = document.createElement("li");
-        const liDate = document.createElement("li");
-        const liOrder = document.createElement("li");
-        const liAddress = document.createElement("li");
+            const liName = document.createElement("li");
+            const liFirstName = document.createElement("li");
+            const liDate = document.createElement("li");
+            const liOrder = document.createElement("li");
+            const liAddress = document.createElement("li");
 
-        liName.innerText = nameElement.value;
-        liFirstName.innerText = firstNameElement.value;
-        liDate.innerText = dateElement.value;
-        liOrder.innerText = orderElement.value;
-        liAddress.innerText = addressElement.value;
+            liName.innerText = nameElement.value;
+            liFirstName.innerText = firstNameElement.value;
+            liDate.innerText = dateElement.value;
+            liOrder.innerText = orderElement.value;
+            liAddress.innerText = addressElement.value;
 
-        ulElement.append(liName);
-        ulElement.append(liFirstName);
-        ulElement.append(liDate);
-        ulElement.append(liOrder);
-        ulElement.append(liAddress);
-        document.getElementById('input').append(ulElement);
+            ulElement.append(liName);
+            ulElement.append(liFirstName);
+            ulElement.append(liDate);
+            ulElement.append(liOrder);
+            ulElement.append(liAddress);
+            document.getElementById('input').append(ulElement);
         }
-        
+
 
     }
-    function validateNameForm(){
-        if(nameElement.value.length <= 2){
+
+    function validateNameForm() {
+        if (nameElement.value.length <= 2) {
             orderForm.querySelector("#nameError").innerText = "Choose a valid name.";
             return false;
         } else {
@@ -57,8 +58,8 @@
         }
     }
 
-    function validateFisrtNamesForm(){
-        if(firstNameElement.value.length <= 2){
+    function validateFirstNamesForm() {
+        if (firstNameElement.value.length <= 2) {
             orderForm.querySelector("#firstNameError").innerText = "Choose a valid firstname.";
             return false;
         } else {

@@ -33,30 +33,36 @@
 
     function validateNameForm() {
         if (nameElement.value.length <= 2) {
-            document.getElementById('name').placeholder = "Kies een geldige naam."
+           
+            contactForm.querySelector("#errorName").innerText = "Kies een geldige naam."
             return false;
         } else {
-            document.getElementById('name').placeholder = ""
+           
+            contactForm.querySelector("#errorName").innerText = ""
             return true;
         }
     }
 
     function validateFirstNameForm() {
         if (firstNameElement.value.length <= 2) {
-            document.getElementById('firstName').placeholder = "Kies een geldige voornaam."
+            
+            contactForm.querySelector("#errorFirstName").innerText = "Kies een geldige voornaam."
             return false;
         } else {
-            document.getElementById('firstName').placeholder = ""
+           
+            contactForm.querySelector("#errorFirstName").innerText = ""
             return true;
         }
     }
 
     function validateSubjectForm() {
         if (subjectElement.value.length <= 2) {
-            document.getElementById('subject').placeholder = "Geef een geldig onderwerp."
+            
+            contactForm.querySelector("#errorSubject").innerText = "Geef een geldig onderwerp."
             return false;
         } else {
-            document.getElementById('subject').placeholder = ""
+            
+            contactForm.querySelector("#errorSubject").innerText = ""
             return true;
         }
     }
@@ -64,19 +70,23 @@
     function validateEmailForm() {
         var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         if (addressElement.value.match(mailformat)) {
-            document.getElementById('address').placeholder = ""
+            
+            contactForm.querySelector("#errorAddress").innerText = ""
             return true;
         } else {
-            document.getElementById('address').placeholder = "Kies een geldig email-adres.";
+           
+            contactForm.querySelector("#errorAddress").innerText = "Kies een geldig email-adres."
             return false;
         }
     }
     function validateRemark() {
         if (subjectElement.value.length <= 2) {
-            document.getElementById('remark').placeholder = "Je mag dit niet leeg laten."
+            
+            contactForm.querySelector("#errorRemark").innerText = "Je mag dit niet leeg laten."
             return false;
         } else {
-            document.getElementById('remark').placeholder = ""
+           
+            contactForm.querySelector("#errorRemark").innerText = ""
             return true;
         }
     }

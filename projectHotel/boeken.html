@@ -43,145 +43,157 @@
         <div class="container6">
 
 
-            <div class="room1">
+            <div class="room1 priceContainer">
                 <h3 class="heading">Tweepersoonskamer</h3>
                 <img src="images/TweepersoonskamerHotelHarmonie.jpg" alt="Tweepersoonskamer">
+                <div class="bottomright">&euro; 35/nacht</div>
             </div>
-            <div class="room2">
+            <div class="room2 priceContainer">
                 <h3 class="heading">Driepersoonkamer</h3>
                 <img src="images/DriepersoonkamerHotelHarmonie.jpg" alt="Tweepersoonskamer">
+                <div class="bottomright">&euro; 55/nacht</div>
             </div>
-            <div class="room3">
+            <div class="room3 priceContainer">
                 <h3 class="heading">Driepersoonkamer Basic Suite</h3>
                 <img src="images/DriepersoonkamerBasicSuiteHotelHarmonie.jpg" alt="Tweepersoonskamer">
+                <div class="bottomright">&euro; 75/nacht</div>
             </div>
-            <div class="room4">
+            <div class="room4 priceContainer">
                 <h3 class="heading">Driepersoonkamer King Suite</h3>
                 <img src="images/DriepersoonkamerKingSuiteHotelHarmonie.jpg" alt="Tweepersoonskamer">
+                <div class="bottomright">&euro; 105/nacht</div>
             </div>
 
 
             <div class="form1">
-                <form class="boekenForm">
+                <form id="boekenForm">
                     <h3>Boeken</h3>
 
-                    <p>Volledige naam<label id="ErrorFullName"></label></p>
-                    <input type="text" placeholder="Uw Volledige Naam" id="fullName">
+                    <label>Volledige naam</label><label class="foutMelding" id="errorFullName"></label><br>
+                    <input type="text" placeholder="Uw Volledige Naam" id="fullName"><br><br>
 
-                    <p>Geslacht<label id="ErrorGeslacht"></label></p>
-                    <select name="select" id="#">
+                    <label>Geslacht</label><label id="errorGeslacht"></label><br>
+                    <select name="select">
                         <option value="1">Man</option>
                         <option value="2">Vrouw</option>
                         <option value="3">X</option>
-                    </select>
+                    </select><br><br>
 
-                    <p>Email<label id="ErrorEmail"></label></p>
-                    <input type="email" placeholder="Uw email" id="email">
+                    <label>Email</label><label class="foutMelding" id="errorEmail"></label><br>
+                    <input type="email" placeholder="Uw email" id="email"><br><br>
 
-                    <p>Telefoon nummer<label id="ErrorTelefoon"></label></p>
-                    <input type="number" placeholder="Uw telefoon nummer" id="telefoon">
+                    <label>Telefoon nummer</label><label class="foutMelding" id="errorTelefoon"></label><br>
+                    <input type="number" placeholder="Uw telefoon nummer" id="telefoon"><br><br>
 
-                    <p>Adres<label id="ErrorAdres"></label></p>
-                    <input type="text" placeholder="Uw adres" id="adres">
+                    <label>Adres</label><label class="foutMelding" id="errorAdres"></label><br>
+                    <input type="text" placeholder="Uw adres" id="adres"><br><br>
 
-                    <p>Aankomst datum</p>
-                    <input type="date">
+                    <label>Aankomst datum</label><br>
+                    <input type="date" id="aankomstDatum" min="2020-11-14"><br><br>
 
-                    <p>Vertrek datum</p>
-                    <input type="date">
+                    <label>Vertrek datum</label><br>
+                    <input type="date" id="vertrekDatum"><br><br>
 
-                    <p>Aankomst uur (Tussen 18u-22u)</p>
-                    <input type="time">
+                    <label>Aankomst uur (Tussen 18u-22u)</label><br>
+                    <input type="time"><br><br>
 
-                    <p>Vertrek uur (Tussen 08u-12u)</p>
-                    <input type="time" min="08:00" max="12:00">
+                    <label>Vertrek uur (Tussen 08u-12u)</label><br>
+                    <input type="time" min="08:00" max="12:00"><br><br>
 
-                    <p>Aantal Tweepersoonskamers<label class="Errorkamer"></label></p>
-                    <select name="select">
-                        <option value="1">0</option>
+                    <label>Tweepersoonskamers</label><label id="errorAantalTwee" class="foutMelding"></label><br>
+                    <select name="select" id="aantalTwee">
+                        <option value="0">0</option>
                         <option value="1">1 kamer</option>
                         <option value="2">2 kamers</option>
                         <option value="3">3 kamers</option>
                         <option value="4">4 kamers</option>
                         <option value="5">5 kamers</option>
-                    </select>
+                    </select><br><br>
 
-                    <p>Aantal Driepersoonskamers<label class="Errorkamer"></label></p>
-                    <select name="select" >
-                        <option value="1">0</option>
+                    <label>Driepersoonskamers</label><label id="errorAantalDrie" class="foutMelding"></label><br>
+                    <select name="select" id="aantalDrie">
+                        <option value="0">0</option>
                         <option value="1">1 kamer</option>
                         <option value="2">2 kamers</option>
                         <option value="3">3 kamers</option>
                         <option value="4">4 kamers</option>
                         <option value="5">5 kamers</option>
-                    </select>
+                    </select><br><br>
 
-                    <p>Aantal Driepersoonskamers(Basic Suite)<label class="Errorkamer"></label></p>
-                    <select name="select">
-                        <option value="1">0</option>
+                    <label>Basic Suite Kamer</label><label id="errorAantalBasicSuite" class="foutMelding"></label><br>
+                    <select name="select" id="aantalBasicSuite">
+                        <option value="0">0</option>
                         <option value="1">1 kamer</option>
                         <option value="2">2 kamers</option>
                         <option value="3">3 kamers</option>
                         <option value="4">4 kamers</option>
                         <option value="5">5 kamers</option>
-                    </select>
+                    </select><br><br>
 
-                    <p>Aantal Driepersoonskamers(King Suite)<label class="Errorkamer"></label></p>
-                    <select name="select" >
-                        <option value="1">0</option>
+                    <label>King Suite Kamer</label><label id="errorAantalKingSuite" class="foutMelding"></label><br>
+                    <select name="select" id="aantalKingSuite">
+                        <option value="0">0</option>
                         <option value="1">1 kamer</option>
                         <option value="2">2 kamers</option>
                         <option value="3">3 kamers</option>
                         <option value="4">4 kamers</option>
                         <option value="5">5 kamers</option>
-                    </select>
+                    </select><br><br>
 
-                    <div class="flex-horizontal kinderVolwassen">
-                        <div>
-                            <p>Aantal Kinderen<label class="ErrorPersonen"></label></p>
-                            <select name="select" >
-                                <option value="1">0</option>
-                                <option value="1">1 persoon</option>
-                                <option value="2">2 personen</option>
-                                <option value="3">3 personen</option>
-                                <option value="4">4 personen</option>
-                                <option value="5">5 personen</option>
-                            </select>
-                        </div>
-                        <div>
-                            <p>Aantal Volwassenen<label class="ErrorPersonen"></label></p>
-                            <select name="select" >
-                                <option value="1">0</option>
-                                <option value="1">1 persoon</option>
-                                <option value="2">2 personen</option>
-                                <option value="3">3 personen</option>
-                                <option value="4">4 personen</option>
-                                <option value="5">5 personen</option>
-                            </select>
-                        </div>
-                    </div>
 
-                    <input class="btn" type="submit" value="Verzenden" name="sendButton" id="sendButton">
+                    <label>Aantal Kinderen</label><label id="errorAantalKind" class="foutMelding"></label><br>
+                    <select name="select" id="aantalKind">
+                        <option value="0">0</option>
+                        <option value="1">1 persoon</option>
+                        <option value="2">2 personen</option>
+                        <option value="3">3 personen</option>
+                        <option value="4">4 personen</option>
+                        <option value="5">5 personen</option>
+                        <option value="6">6 persoon</option>
+                        <option value="7">7 personen</option>
+                        <option value="8">8 personen</option>
+                        <option value="9">9 personen</option>
+                        <option value="10">10 personen</option>
+                    </select><br><br>
+
+                    <label>Aantal Volwassenen</label><label id="errorAantalVol" class="foutMelding"></label><br>
+                    <select name="select" id="aantalVol">
+                        <option value="0">0</option>
+                        <option value="1">1 persoon</option>
+                        <option value="2">2 personen</option>
+                        <option value="3">3 personen</option>
+                        <option value="4">4 personen</option>
+                        <option value="5">5 personen</option>
+                        <option value="6">6 persoon</option>
+                        <option value="7">7 personen</option>
+                        <option value="8">8 personen</option>
+                        <option value="9">9 personen</option>
+                        <option value="10">10 personen</option>
+                    </select><br>
+
+
+                    <input class="btn" type="submit" value="VERZENDEN" name="sendButton" id="sendButton">
+
                 </form>
             </div>
             <div class="betaalForm">
                 <h3 class="totaalBerekening">Totaal Berekening</h3>
                 <p>
-                    Aantal kamers:
+                    Aantal tweepersoonskamers:
                     <label id="aantalTweepersoons">0</label>
                 </p>
                 <p>
-                    Aantal kamers:
+                    Aantal driepersoonskamers:
                     <label id="aantalDriepersoons">0</label>
                 </p>
 
                 <p>
-                    Aantal kamers:
+                    Aantal Basic Suite kamers:
                     <label id="aantalDriepersoonsBasic">0</label>
                 </p>
 
                 <p>
-                    Aantal kamers:
+                    Aantal King Suite kamers:
                     <label id="aantalDriepersoonsKing">0</label>
                 </p>
 
@@ -193,7 +205,7 @@
                     ----------------------------------------------------------
                 </p>
                 <p>
-                    Totaal prijs:
+                    Totaal prijs: &euro;
                     <label id="totaalPrijs">0</label>
                 </p>
 

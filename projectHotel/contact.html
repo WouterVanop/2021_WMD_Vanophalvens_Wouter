@@ -66,19 +66,24 @@
             </div>
             <div class="form">
                 <form id="contactForm">
-                    <label for="name">Naam: </label><br>
-                    <input type="text" name="name" id="name"><br>
+                    <label for="name">Naam: </label>
+                    <label class="foutMelding" id="errorName"></label><br>
+                    <input type="text" name="name" id="name" placeholder="Uw naam"><br>
 
-                    <label for="firstName">Voornaam: </label><br>
-                    <input type="text" name="firstName" id="firstName"><br>
+                    <label for="firstName">Voornaam: </label>
+                    <label class="foutMelding" id="errorFirstName"></label><br>
+                    <input type="text" name="firstName" id="firstName" placeholder="Uw voornaam"><br>
 
-                    <label for="address">Email-adres: </label><br>
-                    <input type="text" name="address" id="address"><br>
+                    <label for="address">Email-adres: </label>
+                    <label class="foutMelding" id="errorAddress"></label><br>
+                    <input type="text" name="address" id="address" placeholder="Uw email"><br>
 
-                    <label for="subject">Onderwerp: </label><br>
-                    <input type="text" name="subject" id="subject"><br>
+                    <label for="subject">Onderwerp: </label>
+                    <label class="foutMelding" id="errorSubject"></label><br>
+                    <input type="text" name="subject" id="subject" placeholder="Uw Onderwerp"><br>
 
-                    <label for="remark">Vraag/Opmerking: </label><br>
+                    <label for="remark">Vraag/Opmerking: </label>
+                    <label class="foutMelding" id="errorRemark"></label><br>
                     <textarea name="remark" id="remark" cols="30" rows="5"></textarea><br>
                     
                     <input class="btn" type="submit" value="Verzenden" name="sendButton" id="sendButton">
