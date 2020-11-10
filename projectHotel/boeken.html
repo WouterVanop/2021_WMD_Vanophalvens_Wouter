@@ -9,6 +9,20 @@
 </head>
 
 <body>
+    <div id="myModalCorona" class="modalCorona">
+        <div class="modal-contentCorona">
+            <span class="closeCorona">&times;</span>
+            <div class="titelModalCorona">
+                <p class="redColor">
+                    Covid-Alert:<br>
+                </p>
+                <p class="whiteColor">
+                    Openingstijden kunnen wijzigen.<br>
+                    Voor meer info kan je ons contacteren.
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="flex-horizontal top-bar">
         <div class="info flex-horizontal">
             <p>+32499638159</p>
@@ -40,9 +54,26 @@
 
     </header>
     <main>
+        <div id="myModalBevestiging" class="modalBevestiging">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="titelModalBevestiging">
+                    <p>Bedankt voor je bestelling!</p>
+                </div>
+                <div class="tekstModalBevestiging">
+                    <p>
+                        Uw betaling is succesvol doorgekomen.<br>
+                        U zal binnen dit en 10 minuten een mail<br>
+                        ontvangen voor de bevestiging van de boeking.<br>
+                    </p>
+                </div>
+                <div class="bttnModalBevestiging">
+                    <button class="bttnClose">CLOSE</button>
+                </div>
+            </div>
+        </div>
+
         <div class="container6">
-
-
             <div class="room1 priceContainer">
                 <h3 class="heading">Tweepersoonskamer</h3>
                 <img src="images/TweepersoonskamerHotelHarmonie.jpg" alt="Tweepersoonskamer">
@@ -89,15 +120,16 @@
                     <input type="text" placeholder="Uw adres" id="adres"><br><br>
 
                     <label>Aankomst datum</label><br>
-                    <input type="date" id="aankomstDatum" min="2020-11-14"><br><br>
+                    <input type="date" id="aankomstDatum"><br><br>
 
                     <label>Vertrek datum</label><label class="foutMelding" id="errorVertrekDatum"></label><br>
-                    <input type="date" id="vertrekDatum" min="2020-11-15"><br><br>
+                    <input type="date" id="vertrekDatum"><br><br>
 
                     <label>Aankomst uur (Tussen 18u-22u)</label><br>
                     <input type="time" id="aankomstUur"><br><br>
 
-                    <label>Vertrek uur (Tussen 08u-12u)</label><label class="foutMelding" id="errorVertrekUur"></label><br>
+                    <label>Vertrek uur (Tussen 08u-12u)</label><label class="foutMelding"
+                        id="errorVertrekUur"></label><br>
                     <input type="time" id="vertrekUur"><br><br>
 
                     <label>Tweepersoonskamers</label><label id="errorAantalTwee" class="foutMelding"></label><br>
