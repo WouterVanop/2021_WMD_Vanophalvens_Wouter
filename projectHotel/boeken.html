@@ -54,24 +54,7 @@
 
     </header>
     <main>
-        <div id="myModalBevestiging" class="modalBevestiging">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div class="titelModalBevestiging">
-                    <p>Bedankt voor je bestelling!</p>
-                </div>
-                <div class="tekstModalBevestiging">
-                    <p>
-                        Uw betaling is succesvol doorgekomen.<br>
-                        U zal binnen dit en 10 minuten een mail<br>
-                        ontvangen voor de bevestiging van de boeking.<br>
-                    </p>
-                </div>
-                <div class="bttnModalBevestiging">
-                    <button class="bttnClose">CLOSE</button>
-                </div>
-            </div>
-        </div>
+        
 
         <div class="container6">
             <div class="room1 priceContainer">
@@ -116,21 +99,19 @@
                     <label>Telefoon nummer</label><label class="foutMelding" id="errorTelefoon"></label><br>
                     <input type="number" placeholder="Uw telefoon nummer" id="telefoon"><br><br>
 
-                    <label>Adres</label><label class="foutMelding" id="errorAdres"></label><br>
-                    <input type="text" placeholder="Uw adres" id="adres"><br><br>
-
                     <label>Aankomst datum</label><br>
                     <input type="date" id="aankomstDatum"><br><br>
 
                     <label>Vertrek datum</label><label class="foutMelding" id="errorVertrekDatum"></label><br>
                     <input type="date" id="vertrekDatum"><br><br>
 
-                    <label>Aankomst uur (Tussen 18u-22u)</label><br>
-                    <input type="time" id="aankomstUur"><br><br>
+                    <label>Aankomst uur (Tussen 18u-22u)</label>
+                    <label class="foutMelding" id="errorAankomstUur"></label><br>
+                    <input type="time" id="aankomstUur" min="18:00:00" max="22:00:00"><br><br>
 
-                    <label>Vertrek uur (Tussen 08u-12u)</label><label class="foutMelding"
-                        id="errorVertrekUur"></label><br>
-                    <input type="time" id="vertrekUur"><br><br>
+                    <label>Vertrek uur (Tussen 08u-12u)</label>
+                    <label class="foutMelding" id="errorVertrekUur"></label><br>
+                    <input type="time" id="vertrekUur" min="08:00:00" max="12:00:00"><br><br>
 
                     <label>Tweepersoonskamers</label><label id="errorAantalTwee" class="foutMelding"></label><br>
                     <select name="select" id="aantalTwee">
@@ -202,7 +183,8 @@
                         <option value="9">9 personen</option>
                         <option value="10">10 personen</option>
                     </select><br>
-
+                    <label>Kortings code</label><label class="foutMelding" id="errorCode"></label><br>
+                    <input type="text" placeholder="Uw kortings code" id="code"><br>
 
                     <input class="btn" type="submit" value="VERZENDEN" name="sendButton" id="sendButton">
 
@@ -244,6 +226,7 @@
             </div>
         </div>
         <script src="script/scriptBoeken.js"></script>
+        <script src="script/scriptCoronaAlert.js"></script>
     </main>
     <footer>
         <div class="low-bar">
