@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boeken</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="myModalCorona" class="modalCorona">
+        <div class="modal-contentCorona">
+            <span class="closeCorona">&times;</span>
+            <div class="titelModalCorona">
+                <p class="redColor">
+                    Covid-Alert:<br>
+                </p>
+                <p class="whiteColor">
+                    Openingstijden kunnen wijzigen.<br>
+                    Voor meer info kan je ons contacteren.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="flex-horizontal top-bar">
+        <div class="info flex-horizontal">
+            <p>+32499638159</p>
+            <p>info@hotelharmonie.be</p>
+        </div>
+        <div class="flex-horizontal reservation">
+            <a href="boeken.html">RESERVEER NU</a>
+            <img src="images/belgium-flag-wave-icon-16.png" alt="belgisch logo">
+        </div>
+
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo2.png" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <ul class="flex-horizontal">
+                    <li><a href="index.html">HOTEL OVERVIEW</a></li>
+                    <li><a href="kamers.html">KAMERS</a></li>
+                    <li><a href="restaurant.html">RESTAURANT</a></li>
+                    <li><a href="weer.html">WEER</a></li>
+                    <li><a href="spawelness.html">SPA & WELLNESS</a></li>
+                    <li><a class="selectedPage" href="boeken.html">BOEKEN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        
+
+        <div class="container6">
+            <div class="room1 priceContainer">
+                <h3 class="heading">Tweepersoonskamer</h3>
+                <img src="images/TweepersoonskamerHotelHarmonie.jpg" alt="Tweepersoonskamer">
+                <div class="bottomright">&euro; 35/nacht</div>
+            </div>
+            <div class="room2 priceContainer">
+                <h3 class="heading">Driepersoonkamer</h3>
+                <img src="images/DriepersoonkamerHotelHarmonie.jpg" alt="Tweepersoonskamer">
+                <div class="bottomright">&euro; 55/nacht</div>
+            </div>
+            <div class="room3 priceContainer">
+                <h3 class="heading">Driepersoonkamer Basic Suite</h3>
+                <img src="images/DriepersoonkamerBasicSuiteHotelHarmonie.jpg" alt="Tweepersoonskamer">
+                <div class="bottomright">&euro; 75/nacht</div>
+            </div>
+            <div class="room4 priceContainer">
+                <h3 class="heading">Driepersoonkamer King Suite</h3>
+                <img src="images/DriepersoonkamerKingSuiteHotelHarmonie.jpg" alt="Tweepersoonskamer">
+                <div class="bottomright">&euro; 105/nacht</div>
+            </div>
+
+
+            <div class="form1">
+                <form id="boekenForm">
+                    <h3>Boeken</h3>
+
+                    <label>Volledige naam</label><label class="foutMelding" id="errorFullName"></label><br>
+                    <input type="text" placeholder="Uw Volledige Naam" id="fullName"><br><br>
+
+                    <label>Geslacht</label><label id="errorGeslacht"></label><br>
+                    <select name="select">
+                        <option value="1">Man</option>
+                        <option value="2">Vrouw</option>
+                        <option value="3">X</option>
+                    </select><br><br>
+
+                    <label>Email</label><label class="foutMelding" id="errorEmail"></label><br>
+                    <input type="email" placeholder="Uw email" id="email"><br><br>
+
+                    <label>Telefoon nummer</label><label class="foutMelding" id="errorTelefoon"></label><br>
+                    <input type="number" placeholder="Uw telefoon nummer" id="telefoon"><br><br>
+
+                    <label>Aankomst datum</label><br>
+                    <input type="date" id="aankomstDatum"><br><br>
+
+                    <label>Vertrek datum</label><label class="foutMelding" id="errorVertrekDatum"></label><br>
+                    <input type="date" id="vertrekDatum"><br><br>
+
+                    <label>Aankomst uur (Tussen 18u-22u)</label>
+                    <label class="foutMelding" id="errorAankomstUur"></label><br>
+                    <input type="time" id="aankomstUur" min="18:00:00" max="22:00:00"><br><br>
+
+                    <label>Vertrek uur (Tussen 08u-12u)</label>
+                    <label class="foutMelding" id="errorVertrekUur"></label><br>
+                    <input type="time" id="vertrekUur" min="08:00:00" max="12:00:00"><br><br>
+
+                    <label>Tweepersoonskamers</label><label id="errorAantalTwee" class="foutMelding"></label><br>
+                    <select name="select" id="aantalTwee">
+                        <option value="0">0</option>
+                        <option value="1">1 kamer</option>
+                        <option value="2">2 kamers</option>
+                        <option value="3">3 kamers</option>
+                        <option value="4">4 kamers</option>
+                        <option value="5">5 kamers</option>
+                    </select><br><br>
+
+                    <label>Driepersoonskamers</label><label id="errorAantalDrie" class="foutMelding"></label><br>
+                    <select name="select" id="aantalDrie">
+                        <option value="0">0</option>
+                        <option value="1">1 kamer</option>
+                        <option value="2">2 kamers</option>
+                        <option value="3">3 kamers</option>
+                        <option value="4">4 kamers</option>
+                        <option value="5">5 kamers</option>
+                    </select><br><br>
+
+                    <label>Basic Suite Kamer</label><label id="errorAantalBasicSuite" class="foutMelding"></label><br>
+                    <select name="select" id="aantalBasicSuite">
+                        <option value="0">0</option>
+                        <option value="1">1 kamer</option>
+                        <option value="2">2 kamers</option>
+                        <option value="3">3 kamers</option>
+                        <option value="4">4 kamers</option>
+                        <option value="5">5 kamers</option>
+                    </select><br><br>
+
+                    <label>King Suite Kamer</label><label id="errorAantalKingSuite" class="foutMelding"></label><br>
+                    <select name="select" id="aantalKingSuite">
+                        <option value="0">0</option>
+                        <option value="1">1 kamer</option>
+                        <option value="2">2 kamers</option>
+                        <option value="3">3 kamers</option>
+                        <option value="4">4 kamers</option>
+                        <option value="5">5 kamers</option>
+                    </select><br><br>
+
+
+                    <label>Aantal Kinderen</label><label id="errorAantalKind" class="foutMelding"></label><br>
+                    <select name="select" id="aantalKind">
+                        <option value="0">0</option>
+                        <option value="1">1 persoon</option>
+                        <option value="2">2 personen</option>
+                        <option value="3">3 personen</option>
+                        <option value="4">4 personen</option>
+                        <option value="5">5 personen</option>
+                        <option value="6">6 persoon</option>
+                        <option value="7">7 personen</option>
+                        <option value="8">8 personen</option>
+                        <option value="9">9 personen</option>
+                        <option value="10">10 personen</option>
+                    </select><br><br>
+
+                    <label>Aantal Volwassenen</label><label id="errorAantalVol" class="foutMelding"></label><br>
+                    <select name="select" id="aantalVol">
+                        <option value="0">0</option>
+                        <option value="1">1 persoon</option>
+                        <option value="2">2 personen</option>
+                        <option value="3">3 personen</option>
+                        <option value="4">4 personen</option>
+                        <option value="5">5 personen</option>
+                        <option value="6">6 persoon</option>
+                        <option value="7">7 personen</option>
+                        <option value="8">8 personen</option>
+                        <option value="9">9 personen</option>
+                        <option value="10">10 personen</option>
+                    </select><br>
+                    <label>Kortings code</label><label class="foutMelding" id="errorCode"></label><br>
+                    <input type="text" placeholder="Uw kortings code" id="code"><br>
+
+                    <input class="btn" type="submit" value="VERZENDEN" name="sendButton" id="sendButton">
+
+                </form>
+            </div>
+            <div class="betaalForm">
+                <h3 class="totaalBerekening">Totaal Berekening</h3>
+                <p>
+                    Aantal tweepersoonskamers:
+                    <label id="aantalTweepersoons">0</label>
+                </p>
+                <p>
+                    Aantal driepersoonskamers:
+                    <label id="aantalDriepersoons">0</label>
+                </p>
+
+                <p>
+                    Aantal Basic Suite kamers:
+                    <label id="aantalDriepersoonsBasic">0</label>
+                </p>
+
+                <p>
+                    Aantal King Suite kamers:
+                    <label id="aantalDriepersoonsKing">0</label>
+                </p>
+
+                <p>
+                    Totaal aantal personen:
+                    <label id="totAantalPersonen">0</label>
+                </p>
+                <p>
+                    ----------------------------------------------------------
+                </p>
+                <p>
+                    Totaal prijs: &euro;
+                    <label id="totaalPrijs">0</label>
+                </p>
+
+            </div>
+        </div>
+        <script src="script/scriptBoeken.js"></script>
+        <script src="script/scriptCoronaAlert.js"></script>
+    </main>
+    <footer>
+        <div class="low-bar">
+            <p>Adres: Stationsstraat 1, Destelbergen 9070  -  Tel: +32499361859  -  Email: info@hotelharmonie.be</p>
+            <p>COPYRIGHT 2020 HOTEL HARMONIE</p>
+        </div>
+    </footer>
+</body>
+
+</html>
