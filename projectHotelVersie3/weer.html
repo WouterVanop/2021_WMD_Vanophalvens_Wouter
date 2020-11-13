@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="myModalCorona" class="modalCorona">
+        <div class="modal-contentCorona">
+            <span class="closeCorona">&times;</span>
+            <div class="titelModalCorona">
+                <p class="redColor">
+                    Covid-Alert:<br>
+                </p>
+                <p class="whiteColor">
+                    Openingstijden kunnen wijzigen.<br>
+                    Voor meer info kan je ons contacteren.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="flex-horizontal top-bar">
+        <div class="info flex-horizontal">
+            <p>+32499638159</p>
+            <p>info@hotelharmonie.be</p>
+        </div>
+        <div class="flex-horizontal reservation">
+            <a href="boeken.html">RESERVEER NU</a>
+            <img src="images/belgium-flag-wave-icon-16.png" alt="belgisch logo">
+        </div>
+
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo2.png" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <ul class="flex-horizontal">
+                    <li><a href="index.html">HOTEL OVERVIEW</a></li>
+                    <li><a href="kamers.html">KAMERS</a></li>
+                    <li><a href="restaurant.html">RESTAURANT</a></li>
+                    <li><a id="refreshWeatherData" class="selectedPage" href="weer.html">WEER</a></li>
+                    <li><a href="spawelness.html">SPA & WELLNESS</a></li>
+                    <li><a href="boeken.html">BOEKEN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="beoordelingen.html">Beoordelingen</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main class="container5">
+        <div id="dag1kleurveranderen" class="app-wrap dag1">
+            <div class="location">
+                <div class="city">Turku, FI</div>
+                <div class="date1">Donderdag, 5 november 2020</div>
+            </div>
+            <div class="current1">
+                <div class="temp1">12<span>°C</span></div>
+                <div class="weather1">Sunny</div>
+                <div class="hi-low1">13°C / 16°C</div>
+            </div>
+        </div>
+        <div id="dag2kleurveranderen" class="app-wrap dag2">
+            <div class="location">
+                <div class="city">Turku, FI</div>
+                <div class="date2">Vrijdag, 6 november 2020</div>
+            </div>
+            <div class="current2">
+                <div class="temp2">10<span>°C</span></div>
+                <div class="weather2">Sunny</div>
+                <div class="hi-low2">13°C / 16°C</div>
+            </div>
+        </div>
+        <div id="dag3kleurveranderen" class="app-wrap dag3">
+            <div class="location">
+                <div class="city">Turku, FI</div>
+                <div class="date3">Zaterdag, 7 november 2020</div>
+            </div>
+            <div class="current3">
+                <div class="temp3">14<span>°C</span></div>
+                <div class="weather3">Sunny</div>
+                <div class="hi-low3">13°C / 16°C</div>
+            </div>
+        </div>
+        <div id="dag4kleurveranderen" class="app-wrap dag4">
+            <div class="location">
+                <div class="city">Turku, FI</div>
+                <div class="date4">Zondag, 8 november 2020</div>
+            </div>
+            <div class="current4">
+                <div class="temp4">14<span>°C</span></div>
+                <div class="weather4">Sunny</div>
+                <div class="hi-low4">13°C / 16°C</div>
+            </div>
+        </div>
+        <div id="dag5kleurveranderen" class="app-wrap dag5">
+            <div class="location">
+                <div class="city">Turku, FI</div>
+                <div class="date5">Maandag, 9 november 2020</div>
+            </div>
+            <div class="current5">
+                <div class="temp5">11<span>°C</span></div>
+                <div class="weather5">Sunny</div>
+                <div class="hi-low5">13°C / 16°C</div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="low-bar">
+            <p>Adres: Saarontie 54, Turku, Varsinais-Suom  -  Tel: +32499361859  -  Email: info@hotelharmonie.be</p>
+            <p>COPYRIGHT 2020 HOTEL HARMONIE</p>
+        </div>
+    </footer>
+    <script src="script/scriptWeer.js"></script>
+    <script src="script/scriptCoronaAlert.js"></script>
+</body>
+</html>

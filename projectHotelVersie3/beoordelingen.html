@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="myModalCorona" class="modalCorona">
+        <div class="modal-contentCorona">
+            <span class="closeCorona">&times;</span>
+            <div class="titelModalCorona">
+                <p class="redColor">
+                    Covid-Alert:<br>
+                </p>
+                <p class="whiteColor">
+                    Openingstijden kunnen wijzigen.<br>
+                    Voor meer info kan je ons contacteren.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="flex-horizontal top-bar">
+        <div class="info flex-horizontal">
+            <p>+32499638159</p>
+            <p>info@hotelharmonie.be</p>
+        </div>
+        <div class="flex-horizontal reservation">
+            <a href="boeken.html">RESERVEER NU</a>
+            <img src="images/belgium-flag-wave-icon-16.png" alt="belgisch logo">
+        </div>
+
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/Logo2.png" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <ul class="flex-horizontal">
+                    <li><a href="index.html">HOTEL OVERVIEW</a></li>
+                    <li><a href="kamers.html">KAMERS</a></li>
+                    <li><a href="restaurant.html">RESTAURANT</a></li>
+                    <li><a href="weer.html">WEER</a></li>
+                    <li><a href="spawelness.html">SPA & WELLNESS</a></li>
+                    <li><a href="boeken.html">BOEKEN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a class="selectedPage" href="beoordelingen.html">BEOORDELINGEN</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        
+        <div class="containerReviews">
+            <div class="reviewTitle">
+                <h3>Schrijf een beoordeling</h3>
+            </div>
+            <div class="ratingGemiddeldeAantal">
+                <h3 id="ratingGemiddelde"></h3>
+                <h3 id="ratingAantal"></h3>
+            </div>
+            <div class="reviewsExamples">
+                <h5 id="naam1">naam review 1</h5>
+                <p class="ratingDatum" id="ratingDatum1">review 1</p>
+                <p id="uitleg1"></p>
+
+                <h5 id="naam2">naam review 2</h5>
+                <p class="ratingDatum" id="ratingDatum2">review 2</p>
+                <p id="uitleg2"></p>
+
+                <h5 id="naam3">naam review 3</h5>
+                <p class="ratingDatum" id="ratingDatum3">review 3</p>
+                <p id="uitleg3"></p>
+            </div>
+            <div class="formReview">
+                <form id="reviewForm">
+                    <label for="score">Score:</label><br>
+                    <select name="select" id="score">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select><br>
+
+                    <label for="name">Naam: </label>
+                    <label class="foutMelding" id="errorName"></label><br>
+                    <input type="text" name="name" id="name" placeholder="Uw naam"><br>
+
+                    <label for="address">Email-adres: </label>
+                    <label class="foutMelding" id="errorAddress"></label><br>
+                    <input type="text" name="address" id="address" placeholder="Uw email"><br>
+
+                    <label for="remark">Vraag/Opmerking: </label>
+                    <label class="foutMelding" id="errorRemark"></label><br>
+                    <textarea name="remark" id="remark" cols="30" rows="5"></textarea><br>
+
+                    <input class="btn" type="submit" value="Versturen" name="sendButton" id="sendButton">
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="low-bar">
+            <p>Adres: Saarontie 54, Turku, Varsinais-Suom - Tel: +32499361859 - Email: info@hotelharmonie.be</p>
+            <p>COPYRIGHT 2020 HOTEL HARMONIE</p>
+        </div>
+    </footer>
+    <script src="script/scriptBeoordelingen.js" src="json/reviews.json"></script>
+    <script src="script/scriptCoronaAlert.js"></script>
+</body>
+
+</html>
