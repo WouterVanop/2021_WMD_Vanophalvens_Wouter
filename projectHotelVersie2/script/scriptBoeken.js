@@ -96,16 +96,13 @@
             validateVertrekUurForm();
             validateAankomstUurForm();
         } else if (validated == true) {
-            alert("Bedankt voor uw bestelling!")
-            //activateButtonModal();
+            e.preventDefault();
+            activateButtonModal();
         }
     }
 
     //function open/close modal
-    // Deze functie werkte voordien maar heb deze volgens mij perongeluk verwijderd
-    //uit mijn html en vind de oude code niet terug... was een gelijkaardige modal
-    //met mijn corona modal... de css staat er ook nog van maar de html is verdwenen.
-    //zeer spijtig..
+    
     function activateButtonModal() {
         var modal = document.getElementById("myModalBevestiging");
         var span = document.getElementsByClassName("close")[0];
